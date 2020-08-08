@@ -27,6 +27,12 @@ function App() {
           user: user,
         });
       });
+      s.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playlists,
+        });
+      });
     }
   }, []);
 
