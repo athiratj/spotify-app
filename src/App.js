@@ -33,6 +33,12 @@ function App() {
           playlists,
         });
       });
+      s.getPlaylist("17I8Yohdh2wEDRaeBg7N6V").then((response) =>
+        dispatch({
+          type: "SET_DISCOVER_WEEKLY",
+          discover_weekly: response,
+        })
+      );
     }
   }, []);
 
