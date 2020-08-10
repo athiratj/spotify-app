@@ -35,3 +35,38 @@
 .body__infoText > p {
   font-size: 14px;
 }
+.body__shuffle {
+  font-size: 80px !important;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.body__icons {
+  display: flex;
+  align-items: center;
+}
+
+.body__icons > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.body__shuffle:hover {
+  transition: 100ms transform ease-in;
+  transform: scale(1.08);
+}
+
+.body__background {
+  position: absolute;
+  top: 13vh;
+  right: 0;
+  opacity: 0.4;
+  height: 80%;
+  width: 80%;
+  background-color: black;
+}
+
+.body__songs {
+  z-index: 1;
+  margin: 20px -30px;
+}
